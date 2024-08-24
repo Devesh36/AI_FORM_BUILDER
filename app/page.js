@@ -1,11 +1,13 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Hero from "./_components/Hero";
+import Header from "./_components/Header";
 
 export default function Home() {
   return (
-   <main>
-  <div>
-    Hello Ai Form Builder here 
-  </div>
-   </main>
+   <div>   
+        <Header/>
+        <Hero />
+   </div>
   );
 }
