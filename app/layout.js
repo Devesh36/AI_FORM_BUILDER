@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
     <html lang="en" data-theme="cupcake">
       <body className={inter.className}>
+        {Header}
         {children} 
         </body>
     </html>
