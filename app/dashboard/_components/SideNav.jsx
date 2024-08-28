@@ -62,6 +62,7 @@ function SideNav() {
       <h2 className= 'text-sm mt-3 text-gray-600'> Upgrade your plan for unlimited AI form build </h2>
       </div>
       </div>
+      f
     </div>
   )
 }
