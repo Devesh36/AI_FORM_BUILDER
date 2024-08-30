@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className="bg-white-100 p-4 ">
       <div className="flex justify-between ">
-        <Image src={"/LOGO2.png"} width={150} height={30} alt="logo" />
+        <Image src={"/LOGO2.png"} width={180} height={30} alt="logo" />
 
         {isSignedIn ? (
           <div className="flex items-center gap-5">

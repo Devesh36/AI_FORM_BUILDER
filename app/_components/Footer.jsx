@@ -12,7 +12,9 @@ export function Footer() {
                 <Image src={"/LOGO2.png"} width={150} height={30} alt="logo" />
               </div>
               <div>
-                <p className="mb-4  text-base font-medium">The FormEase Team</p>
+                <p className="mb-4  text-base font-medium">
+                  The FormEase Team <br /> 206 Upasna Apt. Nerul
+                </p>
                 <p className="text-sm text-gray-600">
                   &copy; Copyright 2024. All Rights Reserved by FormEase.
                 </p>
