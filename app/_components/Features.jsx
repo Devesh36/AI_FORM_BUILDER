@@ -1,6 +1,7 @@
 import React from "react";
 import { LightningBoltIcon } from "@radix-ui/react-icons";
 
+
 function Features() {
   return (
     <>
