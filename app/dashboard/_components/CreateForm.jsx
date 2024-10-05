@@ -18,7 +18,7 @@ import moment from 'moment/moment'
 import { Loader2 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
-const PROMPT = ", On the basis of description please give form in json format with form title , form subheading , form field , form name , placeholder name , and form label ,field required ,field type In json format"
+const PROMPT = ", Based on the description, generate a form structure in JSON format containing the following compulsory elements: formTitle, formSubheading, formName, formFields (with each field including: formLabel, placeholderName, fieldRequired, fieldType). Ensure that the form is well-structured and adheres to common form conventions."
 function CreateForm() {
     const [openDialog,setOpenDailog] = useState(false);
     const [userInput , setUserInput ] = useState();
