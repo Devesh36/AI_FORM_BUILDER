@@ -1,12 +1,19 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import {Button } from "./../../components/ui/button"
 import { SignInButton, UserButton, useUser } from "@clerk/nextjs";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect  } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 function Header() {
   const { user, isSignedIn } = useUser();
-  return (
+  const path =usePathname()
+  useEffect(() => {
+    console.log(path);
+  },
+  [path])
+
+  return !path.includes('aiform') && (
     <div className="bg-white-100 p-4 ">
       <div className="flex justify-between ">
         <Image src={"/LOGO2.png"} width={180} height={30} alt="logo" />
