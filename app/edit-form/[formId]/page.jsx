@@ -7,6 +7,7 @@ import React, { useState, useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import FormUi from "../_components/FormUi";
+import { toast } from "sonner";
 
 function EditForm({ params }) {
   const { user } = useUser();
@@ -31,7 +32,7 @@ function EditForm({ params }) {
       );
 
     setRecord(result[0]);
-    console.log(JSON.parse(result[0].jsonform));
+    console.log(JSON.parse(     result[0].jsonform));
     setJsonForm(JSON.parse(result[0].jsonform));
   };
 
@@ -48,6 +49,7 @@ function EditForm({ params }) {
     jsonForm.formFields[index].placeholderName = value.placeholder;
     setUpdateTrigger(Date.now());
     console.log(updateTrigger);
+    toast("Updated");
   };
 
   const updateJsonFormInDb = async () => {
@@ -62,7 +64,7 @@ function EditForm({ params }) {
           eq(JsonForms.createdBy, user?.primaryEmailAddress?.emailAddress)
         )
       );
-      toast("Updated")
+      toast("Updated");
   };
 
   const deleteFiled=(indexToRemove)=>{
