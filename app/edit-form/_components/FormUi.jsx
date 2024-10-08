@@ -12,7 +12,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import FieldEdit from "./FieldEdit";
 
-function FormUi({ jsonForm , selectedTheme, onFieldUpdate, deleteFiled }) {
+function FormUi({ jsonForm , selectedTheme, onFieldUpdate, deleteFiled , editable=true}) {
 
 
   return (
@@ -87,12 +87,12 @@ function FormUi({ jsonForm , selectedTheme, onFieldUpdate, deleteFiled }) {
               />
             </div>
           )}
-          <div>
+          {editable&&<div>
             <FieldEdit defaultValue={formField}
             onUpdate={(value)=>onFieldUpdate(value ,index)} 
             deleteFiled={()=>deleteFiled(index)}
             />
-          </div>
+          </div>}
         </div>
       ))}
     </div>

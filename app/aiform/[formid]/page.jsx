@@ -35,6 +35,7 @@ const LiveAiForm = ({ params }) => {
         deleteFiled={() => {
           console.log;
         }}
+        editable={false}
       />
     </div>
   );

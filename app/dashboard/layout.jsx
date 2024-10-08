@@ -1,6 +1,6 @@
 "use client"
 
-import { SignedIn, SignIn } from '@clerk/nextjs'
+import { SignedIn,} from '@clerk/nextjs'
 import React from 'react'
 import SideNav from './_components/SideNav'
 
