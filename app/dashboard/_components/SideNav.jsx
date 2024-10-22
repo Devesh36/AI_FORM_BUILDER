@@ -3,6 +3,7 @@ import { usePathname } from 'next/navigation'
 import React,{useEffect} from 'react'
 import { Button } from '@/components/ui/button'
 import { Progress } from "@/components/ui/progress"
+import Link from 'next/link'
 
 
 function SideNav() {
@@ -46,11 +47,11 @@ function SideNav() {
     <div className="h-screen shadow-md border">
      <div className="p-5">
       {menuList.map((menu,index)=>(
-        <h2 key={index} className = {`flex items-center gap-3 p-4 mb-3 hover:bg-primary hover:text-white rounded-lg cursor-pointer text-gray-500
+        <Link href={menu.path} key={index} className = {`flex items-center gap-3 p-4 mb-3 hover:bg-primary hover:text-white rounded-lg cursor-pointer text-gray-500
         ${path==menu.path&&'bg-primary text-white'}`}>
             <menu.icon/>
             {menu.name }
-        </h2>
+        </Link>
         
       ))}
       </div>
