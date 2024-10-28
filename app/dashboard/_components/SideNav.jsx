@@ -22,20 +22,20 @@ function SideNav() {
             path : '/dashboard/responses'
     }
 ,
-    {
-        id:1,
-        name:'Anaylatics',
-        icon : LineChart,
-        path : '/dashboard/anaylatics'
-}
+//     {
+//         id:1,
+//         name:'Anaylatics',
+//         icon : LineChart,
+//         path : '/dashboard/anaylatics'
+// }
 ,
 
-{
-    id:1,
-    name:'Upgrade',
-    icon :Shield,
-    path : '/dashboard/upgrade'
-}
+// {
+//     id:1,
+//     name:'Upgrade',
+//     icon :Shield,
+//     path : '/dashboard/upgrade'
+// }
     ]
 
     const path=usePathname();
@@ -55,15 +55,15 @@ function SideNav() {
         
       ))}
       </div>
-      <div className = "fixed bottom-7 p-6 w-64">
+      {/* <div className = "fixed bottom-7 p-6 w-64">
         <Button className='w-full'>+ Create Form  </Button>
         <div className= 'my-7'>
       <Progress value={33} />
       <h2 className= 'text-sm mt-2 text-gray-600'><strong>2</strong> Out of <strong>3</strong> File Created </h2>
       <h2 className= 'text-sm mt-3 text-gray-600'> Upgrade your plan for unlimited AI form build </h2>
       </div>
-      </div>
-      f
+      </div> */}
+      
     </div>
   )
 }

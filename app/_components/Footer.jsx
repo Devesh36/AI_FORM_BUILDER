@@ -13,7 +13,7 @@ export function Footer() {
               </div>
               <div>
                 <p className="mb-4  text-base font-medium">
-                  The FormEase Team <br /> 206 Upasna Apt. Nerul
+                  The FormEase Team <br /> Terna Engg
                 </p>
                 <p className="text-sm text-gray-600">
                   &copy; Copyright 2024. All Rights Reserved by FormEase.

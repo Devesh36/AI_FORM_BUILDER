@@ -70,9 +70,7 @@ function FormListItemRes({ jsonForm, formRecord }) {
           <hr />
         </CardContent>
         <CardFooter className="flex justify-between">
-          <h2>
-            <strong>42</strong> Responses
-          </h2>
+          
           <Button onClick={() => exportData()} disabled={loading}>
             {loading ? <Loader className="animate-spin" /> : "Export"}
           </Button>
