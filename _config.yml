@@ -1,0 +1,38 @@
+# Site settings
+title: "Your Site Title"
+description: "A description of your site"
+baseurl: "" # Leave this empty for the root, or use '/<repository-name>' for GitHub Pages
+url: "https://<username>.github.io" # Your GitHub Pages URL
+theme: jekyll-theme-primer
+
+# Directory settings
+source: docs
+destination: docs/_site
+
+# Plugins
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Pagination settings (optional)
+paginate: 5
+paginate_path: "/page:num/"
+
+# GitHub Pages settings
+github:
+  is_project_page: true # Set to true if this is a project page
+
+# Exclude any files that don’t need to be processed
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
